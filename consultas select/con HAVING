@@ -1,0 +1,4 @@
+SELECT categoria, AVG(precio_venta) AS precio_promedio
+FROM productos
+GROUP BY categoria
+HAVING AVG(precio_venta) > 500;
