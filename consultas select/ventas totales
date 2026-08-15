@@ -1,0 +1,1 @@
+SELECT SUM(total) AS ventas_totales FROM ordenes;
