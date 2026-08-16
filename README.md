@@ -1,5 +1,28 @@
 # 🪑 BASE DE DATOS - MUEBLERÍA
 
+---
+
+# 👥 Integrantes
+
+### 11 BTP
+
+* **Dylan-Castellanos**
+* **Juan Hernández**
+* **Orlin Gamez**
+* **Veronica Martinez**
+* **Angelly Ulloa**
+* **Angel Maldonado**
+* **Lucia Mendoza**
+
+---
+
+# 🏫 Información académica
+
+**Proyecto:** Base de Datos - Mueblería
+**Curso:** 11 BTP
+**Área:** Informática
+**Tema:** Diseño y desarrollo de una base de datos relacional
+
 ## 📌 Descripción del proyecto
 
 Este repositorio contiene el desarrollo de una **base de datos para una mueblería**, creada con el propósito de organizar y administrar de manera eficiente la información relacionada con clientes, productos, materiales, órdenes y muebles personalizados.
@@ -251,29 +274,6 @@ Para trabajar con el proyecto se pueden seguir estos pasos:
 6. Ejecutar las consultas de `consultas join`.
 7. Comprobar los resultados obtenidos.
 8. Revisar las capturas y evidencias del proyecto.
-
----
-
-# 👥 Integrantes
-
-### 11 BTP
-
-* **Dylan-Castellanos**
-* **Juan Hernández**
-* **Orlin Gamez**
-* **Veronica Martinez**
-* **Angelly Ulloa**
-* **Angel Maldonado**
-* **Lucia Mendoza**
-
----
-
-# 🏫 Información académica
-
-**Proyecto:** Base de Datos - Mueblería
-**Curso:** 11 BTP
-**Área:** Informática
-**Tema:** Diseño y desarrollo de una base de datos relacional
 
 ---
 
