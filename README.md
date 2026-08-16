@@ -295,4 +295,5 @@ Mediante las tablas, relaciones, datos y consultas SQL es posible administrar in
 
 ## 👨‍💻 Proyecto realizado por los estudiantes de 11 BTP
 
+
 **Base de Datos - Mueblería** 🪑
