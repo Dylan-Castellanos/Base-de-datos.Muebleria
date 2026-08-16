@@ -261,7 +261,7 @@ Para trabajar con el proyecto se pueden seguir estos pasos:
 * **Dylan-Castellanos**
 * **Juan Hernández**
 * **Orlin Gamez**
-* **Lucia**
+* **Veronica Martinez**
 * **Angelly Ulloa**
 * **Angel Maldonado**
 * **Lucia Mendoza**
