@@ -79,6 +79,7 @@ Metal
 Tela
 Pintura
 Otros materiales utilizados en la fabricación
+
 📋 Órdenes personalizadas
 
 Las órdenes permiten registrar solicitudes realizadas por los clientes cuando necesitan un mueble personalizado o un producto con características específicas.
@@ -91,46 +92,13 @@ Materiales
 Cantidades
 Fechas
 Información de la orden
+
 🔗 Relaciones entre tablas
 
 Las tablas de la base de datos se relacionan entre sí mediante claves primarias y claves foráneas.
 
 Estas relaciones permiten mantener la integridad de la información y evitar que los datos estén repetidos innecesariamente.
 
-📁 Estructura del repositorio
-
-El repositorio está organizado de la siguiente manera:
-
-Base-de-datos.Muebleria/
-│
-├── Base-de-datos.Muebleria/
-│   └── Capturas de pantalla de la base de datos
-│
-├── archivos/
-│   └── Archivos relacionados con la estructura de la base de datos
-│
-├── consultas join/
-│   └── Consultas SQL utilizando JOIN
-│
-├── consultas select/
-│   └── Consultas SQL utilizando SELECT
-│
-├── insert tablas/
-│   └── Scripts para insertar datos
-│
-├── sql relaciones de tablas/
-│   └── Scripts relacionados con las relaciones entre tablas
-│
-├── sql tablas/
-│   └── Scripts para crear las tablas
-│
-├── README.md
-│   └── Documentación y portada del proyecto
-│
-└── leeme.txt
-    └── Información y estructura inicial del proyecto
-📂 Descripción de las carpetas
-sql tablas
 
 En esta carpeta se encuentran los scripts SQL utilizados para crear las tablas iniciales de la base de datos.
 
@@ -242,6 +210,7 @@ Revisar la carpeta sql relaciones de tablas para conocer las relaciones existent
 Ejecutar las consultas de la carpeta consultas select para consultar la información almacenada.
 Utilizar las consultas de la carpeta consultas join para obtener información combinada entre diferentes tablas.
 Revisar las capturas almacenadas en la carpeta correspondiente para comprobar la estructura y funcionamiento del proyecto.
+
 📊 Importancia del proyecto
 
 Una base de datos es una herramienta importante para una mueblería porque permite mantener organizada una gran cantidad de información.
@@ -265,6 +234,7 @@ Archivos de organización.
 Capturas de pantalla.
 Documentación del proyecto.
 Información sobre la estructura de la base de datos.
+
 👨‍💻 Autor
 
 Proyecto de Base de Datos - Mueblería
