@@ -1,0 +1,1 @@
+SELECT MAX(precio_venta) AS precio_mas_alto FROM productos;

@@ -1,0 +1,1 @@
+SELECT MIN(precio_venta) AS precio_mas_bajo FROM productos;
