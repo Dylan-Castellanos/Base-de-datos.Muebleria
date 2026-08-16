@@ -1,237 +1,298 @@
-🪑 BASE DE DATOS - MUEBLERÍA
+# 🪑 BASE DE DATOS - MUEBLERÍA
 
-👥 Integrantes del proyecto
+## 📌 Descripción del proyecto
 
-Integrantes:
+Este repositorio contiene el desarrollo de una **base de datos para una mueblería**, creada con el propósito de organizar y administrar de manera eficiente la información relacionada con clientes, productos, materiales, órdenes y muebles personalizados.
 
-Dylan-Castellanos
-Juan Hernández
-Orlin Gamez
-Veronica Martinez 
-Angelly Ulloa
-Angel Maldonado
-Lucia Mendoza
+El proyecto utiliza **SQL** para crear las tablas, establecer relaciones entre ellas, insertar información y realizar diferentes consultas. Además, los archivos se encuentran organizados en diferentes carpetas para facilitar el desarrollo, mantenimiento y comprensión del proyecto.
 
-🏫 Proyecto académico
+---
 
-Proyecto: Base de Datos - Mueblería
-Curso: 11 BTP
-Área: Informática / Base de Datos
+## 🎯 Objetivo general
 
-📌 Descripción del proyecto
+Desarrollar una base de datos para una mueblería que permita almacenar, organizar, relacionar y consultar información de manera eficiente, facilitando la administración de clientes, productos, materiales y órdenes.
 
-Este repositorio contiene el diseño, desarrollo y organización de una base de datos para una mueblería, creada con el objetivo de almacenar, organizar y consultar de manera eficiente la información relacionada con los clientes, productos, materiales y órdenes personalizadas.
+## 🎯 Objetivos específicos
 
-El proyecto está desarrollado utilizando SQL y contiene diferentes scripts organizados en carpetas para facilitar su comprensión, mantenimiento y utilización.
+* Crear las tablas necesarias para organizar la información de la mueblería.
+* Registrar información de los clientes.
+* Registrar los productos y muebles disponibles.
+* Registrar los materiales utilizados en la fabricación de los muebles.
+* Administrar órdenes realizadas por los clientes.
+* Permitir la creación y seguimiento de órdenes personalizadas.
+* Establecer relaciones entre las diferentes tablas.
+* Insertar datos de prueba.
+* Realizar consultas mediante `SELECT`.
+* Utilizar consultas `JOIN` para combinar información de diferentes tablas.
+* Mantener todos los archivos SQL organizados dentro del repositorio.
+* Utilizar Git y GitHub para llevar un control de las versiones del proyecto.
 
-La base de datos permite manejar información importante para el funcionamiento de una mueblería, manteniendo relaciones entre las diferentes tablas y procurando que los datos estén organizados y puedan ser consultados de manera sencilla.
+---
 
-🎯 Objetivo del proyecto
+# 🗄️ Estructura de la base de datos
 
-El objetivo principal es desarrollar una estructura de base de datos que permita administrar la información de una mueblería de forma organizada.
+La base de datos está diseñada para administrar diferentes aspectos relacionados con el funcionamiento de una mueblería.
 
-Entre los principales objetivos se encuentran:
+## 👥 Clientes
 
-Crear las tablas necesarias para almacenar la información.
-Organizar correctamente los datos de clientes, productos, materiales y órdenes.
-Establecer relaciones entre las diferentes tablas.
-Insertar datos de prueba para comprobar el funcionamiento de la base de datos.
-Realizar consultas SQL para obtener información almacenada.
-Utilizar consultas SELECT para visualizar diferentes datos.
-Utilizar consultas JOIN para relacionar información de varias tablas.
-Mantener los scripts SQL organizados en diferentes carpetas.
-Facilitar la comprensión y mantenimiento del proyecto.
+La tabla de clientes almacena la información de las personas que realizan compras u órdenes en la mueblería.
 
-🗄️ Base de datos
+Entre los datos que se pueden registrar se encuentran:
 
-La base de datos está diseñada para almacenar y administrar información relacionada con las actividades principales de una mueblería.
+* ID del cliente
+* Nombre
+* Apellido
+* Dirección
+* Teléfono
 
-👥 Clientes
+## 🪑 Productos
 
-La información de los clientes permite registrar datos necesarios para identificar y contactar a las personas que realizan compras u órdenes.
+La tabla de productos contiene información sobre los muebles y productos disponibles en la mueblería.
 
-Entre los datos que pueden manejarse se encuentran:
+Puede almacenar datos como:
 
-ID del cliente
-Nombre
-Apellido
-Dirección
-Teléfono
+* ID del producto
+* Nombre del producto
+* Precio de venta
+* Descripción
+* Disponibilidad
 
-🪑 Productos
+## 🪵 Materiales
 
-Esta sección permite almacenar los diferentes muebles o productos que ofrece la mueblería.
-Los productos pueden contener información como:
+La tabla de materiales permite registrar los diferentes recursos utilizados para fabricar los muebles.
 
-ID del producto
-Nombre
-Precio
-Descripción
-Disponibilidad
+Algunos ejemplos de materiales son:
 
-🪵 Materiales
+* Madera
+* Vidrio
+* Metal
+* Tela
+* Pintura
+* Otros materiales utilizados en la fabricación
 
-Los materiales permiten registrar los recursos utilizados para fabricar o personalizar los muebles.
+## 👤 Personalizadas
 
-Algunos ejemplos son:
+Esta parte de la base de datos permite manejar información relacionada con los muebles o productos que son elaborados de acuerdo con las especificaciones solicitadas por los clientes.
 
-Madera
-Vidrio
-Metal
-Tela
-Pintura
-Otros materiales utilizados en la fabricación
+Las personalizaciones pueden incluir diferentes características del producto, materiales, cantidades y otros detalles solicitados.
 
-📋 Órdenes personalizadas
+## 📋 Órdenes
 
-Las órdenes permiten registrar solicitudes realizadas por los clientes cuando necesitan un mueble personalizado o un producto con características específicas.
+La tabla de órdenes permite registrar las compras o solicitudes realizadas por los clientes.
 
-Estas órdenes pueden relacionarse con:
+Las órdenes pueden relacionarse con:
 
-Clientes
-Productos
-Materiales
-Cantidades
-Fechas
-Información de la orden
+* Clientes
+* Productos
+* Cantidades
+* Fechas
+* Información de la orden
+* Muebles personalizados
 
-🔗 Relaciones entre tablas
+---
 
-Las tablas de la base de datos se relacionan entre sí mediante claves primarias y claves foráneas.
-Estas relaciones permiten mantener la integridad de la información y evitar que los datos estén repetidos innecesariamente.
+# 🔗 Relaciones entre las tablas
 
+Las tablas de la base de datos están relacionadas mediante **claves primarias y claves foráneas**.
 
-En esta carpeta se encuentran los scripts SQL utilizados para crear las tablas iniciales de la base de datos.
-Aquí se define la estructura de cada tabla, incluyendo sus campos, tipos de datos, claves primarias y otras restricciones.
+Las relaciones permiten conectar la información almacenada en las diferentes tablas y facilitan la realización de consultas más completas.
 
-insert tablas
+Por ejemplo, una orden puede estar relacionada con un cliente para conocer quién realizó la compra, mientras que también puede relacionarse con los productos incluidos en dicha orden.
 
-Esta carpeta contiene los scripts utilizados para insertar datos de prueba dentro de las tablas.
+El uso de relaciones ayuda a mantener los datos organizados y evita almacenar la misma información repetidamente.
 
-Los datos insertados permiten comprobar que las tablas funcionan correctamente y que posteriormente pueden realizarse consultas sobre ellas.
+---
 
-consultas select
+# 📁 Organización del repositorio
 
-Aquí se encuentran diferentes consultas realizadas utilizando la instrucción:
+El proyecto se encuentra organizado mediante diferentes carpetas y archivos:
 
-SELECT
+```text
+Base-de-datos.Muebleria/
+│
+├── Base-de-datos.Muebleria/
+│   └── Capturas y evidencias del proyecto
+│
+├── archivos/
+│   └── Archivos adicionales del proyecto
+│
+├── consultas join/
+│   └── Consultas utilizando JOIN
+│
+├── consultas select/
+│   └── Consultas utilizando SELECT
+│
+├── insert tablas/
+│   └── Scripts para insertar datos
+│
+├── sql relaciones de tablas/
+│   └── Scripts para establecer relaciones
+│
+├── sql tablas/
+│   └── Scripts para crear las tablas
+│
+├── README.md
+│   └── Documentación principal del proyecto
+│
+└── leeme.txt
+    └── Información adicional del proyecto
+```
 
-Estas consultas permiten obtener y visualizar información almacenada en las tablas.
-Por ejemplo, pueden utilizarse para consultar todos los clientes, productos, materiales u órdenes registrados.
+---
 
-consultas join
+# 📂 Descripción de las carpetas
 
-Esta carpeta contiene consultas que utilizan diferentes tipos de JOIN.
-Los JOIN permiten combinar información proveniente de dos o más tablas que tienen una relación entre ellas.
+### 📁 `sql tablas`
 
-Esto resulta importante para obtener información más completa, por ejemplo, relacionar un cliente con sus órdenes o una orden con los productos correspondientes.
+Contiene los scripts utilizados para crear las tablas de la base de datos.
 
-sql relaciones de tablas
+En estos archivos se establecen los nombres de las tablas, campos, tipos de datos, claves primarias y restricciones necesarias.
 
-En esta carpeta se encuentran los scripts relacionados con las relaciones existentes entre las tablas.
-Aquí se pueden observar elementos como claves foráneas y relaciones que permiten conectar la información almacenada en las diferentes tablas.
+### 📁 `insert tablas`
 
-archivos
+Contiene los comandos utilizados para insertar información de prueba en las tablas.
 
-Esta carpeta contiene archivos relacionados con la estructura y organización general del proyecto.
-Su propósito es mantener separados los diferentes elementos utilizados durante el desarrollo de la base de datos.
+Estos datos permiten comprobar que la base de datos funciona correctamente.
 
-Base-de-datos.Muebleria
+### 📁 `sql relaciones de tablas`
 
-Esta carpeta contiene capturas de pantalla y evidencias relacionadas con el funcionamiento y estructura de la base de datos.
-Las capturas sirven como evidencia del desarrollo realizado y permiten observar visualmente diferentes partes del proyecto.
+Contiene los scripts utilizados para establecer las relaciones entre las diferentes tablas mediante claves foráneas.
 
-💻 Tecnologías utilizadas
+### 📁 `consultas select`
 
-Para realizar este proyecto se utilizaron principalmente las siguientes tecnologías y herramientas:
+Contiene diferentes consultas realizadas utilizando `SELECT`, las cuales permiten visualizar y obtener información almacenada en la base de datos.
 
-SQL
+### 📁 `consultas join`
 
-Se utiliza para crear las tablas, insertar información, establecer relaciones y realizar consultas sobre la base de datos.
-Visual Studio / Visual Studio Code
-Se utiliza como entorno para crear y organizar los archivos del proyecto y escribir los diferentes scripts SQL.
+Contiene consultas realizadas utilizando `JOIN`, permitiendo combinar información de dos o más tablas relacionadas.
 
-Git
+### 📁 `archivos`
 
-Git permite llevar un control de las modificaciones realizadas en los archivos del proyecto.
-También permite crear diferentes versiones del proyecto mediante commits.
+Contiene archivos adicionales utilizados durante el desarrollo y organización del proyecto.
 
-GitHub
+### 📁 `Base-de-datos.Muebleria`
 
-GitHub se utiliza para almacenar el repositorio de manera remota y permitir que los archivos del proyecto estén organizados y disponibles dentro del repositorio.
+Contiene capturas de pantalla y evidencias relacionadas con la creación y funcionamiento de la base de datos.
 
-🔍 Consultas SQL
+---
 
-El proyecto contiene diferentes tipos de consultas para comprobar el funcionamiento de la base de datos.
-Entre ellas se encuentran:
+# 💻 Tecnologías utilizadas
 
-SELECT
+## SQL
 
-Se utiliza para consultar y mostrar información almacenada en las tablas.
+Se utiliza para crear las tablas, insertar datos, establecer relaciones y realizar consultas sobre la base de datos.
+
+## Visual Studio
+
+Se utiliza para crear, editar y organizar los archivos utilizados durante el desarrollo del proyecto.
+
+## Git
+
+Se utiliza para controlar las diferentes versiones del proyecto y registrar los cambios realizados mediante commits.
+
+## GitHub
+
+Se utiliza para almacenar el repositorio de manera remota y mantener todos los archivos del proyecto organizados.
+
+---
+
+# 🔎 Consultas SQL
+
+El proyecto incluye diferentes tipos de consultas para comprobar el funcionamiento de la base de datos.
+
+### SELECT
+
+Las consultas `SELECT` permiten obtener información almacenada en las tablas.
+
+Ejemplo:
+
+```sql
 SELECT * FROM clientes;
-JOIN
+```
 
-Se utiliza para combinar información de diferentes tablas relacionadas.
+### JOIN
 
+Las consultas `JOIN` permiten combinar información de diferentes tablas relacionadas.
+
+Ejemplo:
+
+```sql
 SELECT *
 FROM clientes
 JOIN ordenes
 ON clientes.id_cliente = ordenes.id_cliente;
+```
 
-Estas consultas permiten obtener información relacionada y comprobar que las relaciones entre las tablas funcionan correctamente.
+Estas consultas permiten obtener información relacionada entre clientes, órdenes, productos y otros elementos de la base de datos.
 
-🧩 Organización del proyecto
+---
 
-La organización de los archivos permite separar cada parte del proyecto según su función.
-De esta manera, los scripts para crear tablas están separados de los scripts para insertar información y de las consultas utilizadas para obtener datos.
-Esta organización facilita encontrar los archivos, realizar modificaciones y continuar desarrollando el proyecto en el futuro.
+# 📊 Importancia de la base de datos
 
-🚀 Cómo utilizar el proyecto
+Una base de datos es importante para una mueblería porque permite administrar una gran cantidad de información de manera organizada.
 
-Para utilizar este proyecto se pueden seguir los siguientes pasos:
-Descargar o clonar el repositorio desde GitHub.
-Abrir la carpeta del proyecto en Visual Studio o Visual Studio Code.
-Revisar la carpeta sql tablas y ejecutar los scripts necesarios para crear la estructura inicial de la base de datos.
-Ejecutar los scripts de la carpeta insert tablas para agregar datos de prueba.
-Revisar la carpeta sql relaciones de tablas para conocer las relaciones existentes entre las tablas.
-Ejecutar las consultas de la carpeta consultas select para consultar la información almacenada.
-Utilizar las consultas de la carpeta consultas join para obtener información combinada entre diferentes tablas.
-Revisar las capturas almacenadas en la carpeta correspondiente para comprobar la estructura y funcionamiento del proyecto.
+En este proyecto, la información se divide en diferentes tablas para evitar el desorden y facilitar las consultas.
 
-📊 Importancia del proyecto
+Gracias a las relaciones entre las tablas es posible conocer información como los clientes registrados, los productos disponibles, los materiales utilizados y las órdenes realizadas.
 
-Una base de datos es una herramienta importante para una mueblería porque permite mantener organizada una gran cantidad de información.
-En lugar de almacenar los datos de forma desordenada, la información puede dividirse en diferentes tablas y relacionarse entre sí.
-Esto permite consultar rápidamente información sobre clientes, productos, materiales y órdenes, además de facilitar la administración de los datos.
+Además, el uso de SQL permite consultar y modificar la información de manera rápida y organizada.
 
-El uso de relaciones entre tablas también ayuda a mantener la información organizada y reducir la duplicación de datos.
+---
 
-📚 Contenido del repositorio
+# 🚀 Funcionamiento del proyecto
 
-El repositorio contiene:
-Estructura de las tablas SQL.
-Datos de prueba.
-Relaciones entre tablas.
-Consultas SELECT.
-Consultas JOIN.
-Archivos de organización.
-Capturas de pantalla.
-Documentación del proyecto.
-Información sobre la estructura de la base de datos.
+Para trabajar con el proyecto se pueden seguir estos pasos:
 
-👨‍💻 Autor
+1. Crear o abrir la base de datos.
+2. Ejecutar los scripts ubicados en `sql tablas`.
+3. Establecer las relaciones mediante los archivos de `sql relaciones de tablas`.
+4. Insertar los datos utilizando los scripts de `insert tablas`.
+5. Ejecutar las consultas de `consultas select`.
+6. Ejecutar las consultas de `consultas join`.
+7. Comprobar los resultados obtenidos.
+8. Revisar las capturas y evidencias del proyecto.
 
-Proyecto de Base de Datos - Mueblería
-Repositorio desarrollado como proyecto académico para demostrar el diseño, creación, organización y utilización de una base de datos relacional mediante SQL.
+---
 
-📅 Estado del proyecto
+# 👥 Integrantes
 
-Estado: En desarrollo / proyecto académico.
-El repositorio puede seguir actualizándose con nuevas tablas, datos, consultas, relaciones y mejoras en la estructura de la base de datos.
+### 11 BTP
 
-📌 Conclusión
+* **Dylan-Castellanos**
+* **Juan Hernández**
+* **Orlin Gamez**
+* **Lucia**
+* **Angelly Ulloa**
+* **Angel Maldonado**
+* **Lucia Mendoza**
 
-Este proyecto representa la creación de una base de datos orientada a la administración de información de una mueblería.
-La organización mediante carpetas y scripts SQL permite mantener el proyecto ordenado y facilita su comprensión, mientras que las relaciones entre las tablas permiten conectar la información de clientes, productos, materiales y órdenes.
+---
 
-El uso de Git y GitHub permite llevar un control de las modificaciones realizadas durante el desarrollo y mantener diferentes versiones del proyecto.
+# 🏫 Información académica
+
+**Proyecto:** Base de Datos - Mueblería
+**Curso:** 11 BTP
+**Área:** Informática
+**Tema:** Diseño y desarrollo de una base de datos relacional
+
+---
+
+# 📌 Estado del proyecto
+
+**Estado:** Proyecto académico en desarrollo.
+
+El proyecto puede continuar ampliándose mediante la incorporación de nuevos datos, consultas, relaciones y funcionalidades para mejorar la administración de la información de la mueblería.
+
+---
+
+# ✅ Conclusión
+
+La creación de esta base de datos permite organizar de manera eficiente la información necesaria para el funcionamiento de una mueblería.
+
+Mediante las tablas, relaciones, datos y consultas SQL es posible administrar información de clientes, productos, materiales, órdenes y muebles personalizados. La utilización de Visual Studio, Git y GitHub también permite mantener los archivos organizados y llevar un control de las modificaciones realizadas durante el desarrollo del proyecto.
+
+---
+
+## 👨‍💻 Proyecto realizado por los estudiantes de 11 BTP
+
+**Base de Datos - Mueblería** 🪑
