@@ -1,4 +1,3 @@
-NNER JOIN
 SELECT 
     clientes.nombre,
     clientes.apellido,
